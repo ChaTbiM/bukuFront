@@ -42,31 +42,3 @@ export default {
 </script>
 
 <style></style>
-<v-select
-  v-model="exchangeType"
-  :items="items"
-  label="الكتاب الذي تريده ... ؟"
-  required
->
-              </v-select>
-<!-- Specefic Book -->
-<div v-if="exchangeType == 'كتاب محدد'">
-                <v-text-field
-                  label="إسم الكتاب المطلوب"
-                  required
-                ></v-text-field>
-                <v-text-field label="إسم الكاتب" required></v-text-field>
-                <v-text-field label="سنة النشر"></v-text-field>
-                <v-text-field
-                  label="الرقم العالمي الموحد للكتاب (isbn)"
-                ></v-text-field>
-              </div>
-<!-- Any Book From specefic Category -->
-<div v-if="exchangeType == 'أي كتاب من تصنيف معين'">
-                <v-select
-                  v-model="wantedBookCategory"
-                  :items="categories"
-                  label="تصنيف الكتاب المطلوب"
-                  required
-                ></v-select>
-              </div>
