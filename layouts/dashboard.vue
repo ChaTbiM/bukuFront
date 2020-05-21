@@ -1,10 +1,6 @@
 <template>
   <v-app>
-    <div>
-      <v-app-bar dense>
-        <v-toolbar-title>بوكو</v-toolbar-title>
-      </v-app-bar>
-    </div>
+    <DashboardNavigation />
     <v-content>
       <v-container class="fill-height" fluid>
         <nuxt />
@@ -14,7 +10,15 @@
 </template>
 
 <script>
-export default {}
+import DashboardNavigation from '../components/DashboardNavigation'
+export default {
+  components: {
+    DashboardNavigation
+  },
+  data() {
+    return {}
+  }
+}
 </script>
 
 <style></style>

@@ -3,7 +3,7 @@
     <v-row align="center" justify="center">
       <v-col cols="12" sm="8" md="4">
         <v-card>
-          <v-toolbar color="secondary" dark flat> </v-toolbar>
+          <v-toolbar color="secondary" dark flat> أودع كتاب </v-toolbar>
           <v-card-text>
             <v-form ref="form">
               <v-text-field label="إسم الكتاب" required></v-text-field>
